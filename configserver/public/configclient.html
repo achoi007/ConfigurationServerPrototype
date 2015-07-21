@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="ConfigClientApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Configuration Server Prototytpe</title>
+    <link href="/bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>AngularJS1</h1>
+        </div>
+        <div class="row col-md-12" data-ng-controller="GetCtrl as getCtrl">
+			<ul>
+				<li ng-repeat="comp in getCtrl.components">{{ comp }}</li>
+			</ul>
+        </div>
+    </div>
+    <script src="/bower/jquery/dist/jquery.min.js"></script>
+    <script src="/bower/bootstrap/dist/bootstrap.min.js"></script>
+    <script src="/bower/angular/angular.js"></script>
+    <script src="/bower/angular-route/angular-route.js"></script>
+    <script src="javascripts/configclient.js"></script>
+</body>
+</html>
